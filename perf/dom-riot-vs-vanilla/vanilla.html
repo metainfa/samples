@@ -21,26 +21,23 @@ limitations under the License.
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="Paul Lewis, Claudio Holanda" />
+    <meta name="author" content="Paul Lewis" />
     <meta name="viewport" content="width=device-width">
-    <title>Image Puller: Riot Edition</title>
+    <title>Image Puller: Vanilla Edition</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      Image Puller: Riot Edition
+      Image Puller: Vanilla Edition
+      <button class="refresh">Add images</button>
+      <button class="download">Download results</button>
     </header>
-    <main>
-        <flickr-image-list></flickr-image-list>
-    </main>
+    <main></main>
     <script src="third_party/moment.min.js"></script>
-    <script src="third_party/riot.min.js"></script>
+    <script src="third_party/react.min.js"></script>
     <script src="third_party/jszip.min.js"></script>
     <script src="third_party/flickr.js"></script>
     <script src="third_party/FileSaver.js"></script>
-    <script src="build/app.js"></script>
-    <script>
-        riot.mount('*');
-    </script>
+    <script src="build/app-vanilla.js"></script>
   </body>
 </html>
